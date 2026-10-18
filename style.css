@@ -11,3 +11,4 @@ main{padding:40px 24px 80px}.kicker{color:#b08d57;text-transform:uppercase;lette
 .tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;background:#fff}th,td{padding:10px 14px;border-bottom:1px solid #e3ddd2;text-align:left}
 .note,.soon{background:#f1ece2;padding:16px 20px;border-left:3px solid #b08d57}.check li,.todo li{list-style:none}.check li:before{content:"✓ ";color:#b08d57}.todo li:before{content:"☐ ";color:#b08d57}
 .spot{border-bottom:1px solid #e3ddd2;padding-bottom:20px}a{color:#8a6a34}footer{background:#14213d;color:#ddd;padding:30px 0}.small{font-size:.85rem;color:#aaa}
+.btn{display:inline-block;background:#14213d;color:#fff;padding:10px 20px;text-decoration:none;font-size:.95rem;margin-top:8px}.btn:hover{background:#b08d57}.btn.alt{background:#b08d57}.tier .price b{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:#14213d}.tier ul{padding-left:0}
