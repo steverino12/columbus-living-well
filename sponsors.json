@@ -1,0 +1,16 @@
+{
+  "_readme": "Single source of truth for paid sponsors. Add an entry only after Stripe shows the subscription active and paid. Then run: python3 _tools/post_sponsors.py --push",
+  "_fields": {
+    "name": "Business name as it should appear",
+    "url": "https:// website",
+    "logo": "img/sponsors/<slug>.png|jpg|svg|webp (required for featured and founding)",
+    "tier": "neighbor | featured | founding",
+    "category": "e.g. property management, movers, renters insurance (lowercase)",
+    "start_date": "YYYY-MM-DD",
+    "stripe_subscription_id": "sub_...",
+    "featured_page": "featured and founding only: page that gets the featured spot, e.g. dublin.html",
+    "blurb": "optional, one or two sentences, max 240 characters",
+    "status": "active | ended (ended entries are kept for records but not shown)"
+  },
+  "sponsors": []
+}
