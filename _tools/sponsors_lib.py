@@ -6,7 +6,13 @@ DATA = os.path.join(ROOT, "sponsors.json")
 TIERS = ("neighbor", "featured", "founding")
 MAX_FOUNDING = 3
 LOGO_EXT = (".png", ".jpg", ".jpeg", ".svg", ".webp")
-FORBIDDEN_TEXT = ("ryerson",)  # owner's personal name must never appear on the site
+# Personal names that must never be published. Kept outside the repo on purpose.
+_FORBIDDEN_FILE = os.environ.get("CLW_FORBIDDEN_NAMES", "/workspace/clw-ops/forbidden-names.txt")
+try:
+    with open(_FORBIDDEN_FILE, encoding="utf-8") as _f:
+        FORBIDDEN_TEXT = tuple(w.strip().lower() for w in _f if w.strip())
+except OSError:
+    FORBIDDEN_TEXT = ()
 
 
 def load():
